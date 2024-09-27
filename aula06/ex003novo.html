@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa 2</title>
+</head>
+<body>
+    <h1>Olá mundo</h1>
+    <p>O objetivo do exercício desta página é somar valores, inicialmente lidos como uma string, impostas pelo comando window.prompt, que normalmente não se somam, utilizando um placeholder ${}, fazendo desta forma, uma conversão de string para número</p>
+    <p>O sinal de mais em uma string não soma e sim faz uma concatenação</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt ('Digite outro número: '))
+
+        var s = n1 + n2
+
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código criado pelo chat GPT</title>
+    <style>
+        body {
+            background-color: violet;
+            color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px; /* Correção: Adicionado 'px' */
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando JavaScript</h1>
+    <p>Correções e inclusões feitas pelo chat GPT, verificar o que mudou.</p>
+
+    <script>
+        // Exibe uma mensagem de alerta
+        window.alert('Estou testando essa primeira mensagem');
+
+        // Pergunta se o usuário deseja continuar e armazena a resposta
+        const continuar = confirm('Você tem certeza que deseja continuar?');
+
+        if (continuar) {
+            // Se o usuário clicou em 'OK', pede para inserir a cidade
+            const cidade = prompt('Qual a sua cidade?');
+            
+            // Verifica se o usuário inseriu algum valor
+            if (cidade) {
+                alert(`Você mora em ${cidade}.`);
+            } else {
+                alert('Você não inseriu uma cidade.');
+            }
+        } else {
+            alert('Você escolheu não continuar.');
+        }
+    </script>
+    
+</body>
+</html>

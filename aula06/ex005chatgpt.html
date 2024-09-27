@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício chat gpt variáveis e tipos primitivos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+            color: darkblue;
+            text-align: center;
+            margin-top: 50px; /*Esta configuração eu ainda não aprendi no curso e não tenho a menor ideia do que seja, só estou colocando aqui pois copiei do chat gpt */
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variáveis e Tipos Primitivos</h1>
+    <button id="startButton">Iniciar</button>
+
+    <script>
+        document.getElementById('startButton').addEventListener('click', function() {
+            // Pede o nome (string)
+            let nome = prompt('Qual é o seu nome?');
+            
+            // Pede a idade (número)
+            let idade = prompt('Qual é a sua idade?');
+
+            // Pede a altura (número)
+            let altura = prompt('Qual é a sua altura em centímetros?');
+
+            // Converte a idade para número e calcula a idade em meses
+            idade = Number(idade);
+            let idadeEmMeses = idade * 12;
+
+            // Converte a altura para número e transforma para metros
+            altura = Number(altura) / 100;
+
+            // Confirma se o usuário quer ver as informações
+            let confirmar = confirm('Deseja ver as suas informações?');
+
+            if (confirmar) {
+                // Exibe as informações em um alert
+                alert(`Nome: ${nome}\nIdade: ${idade} anos (${idadeEmMeses} meses)\nAltura: ${altura.toFixed(2)} metros`);
+            } else {
+                alert('Você escolheu não ver as informações.');
+            }
+        });
+    </script>
+    
+</body>
+</html>

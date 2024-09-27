@@ -1,0 +1,64 @@
+@charset "utf-8";
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dbdada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*O "vh" vem de "viewport height", ou seja, altura da viewport. A viewport é a área visível na tela do dispositivo. */
+    margin: 0;
+    }
+.login-container {
+    background-color: #ffffff;
+    padding: 0px 30px 30px 30px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px #6b6b6b;
+    width: 300px;
+    text-align: center;
+    }
+
+h2{
+    background-color: #005CDE;
+    margin: 0px;
+    width: 100%;
+    color: white;
+    padding: 10px 11px 10px 20px;
+    text-align: center;
+}
+
+.input-group{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    padding: 10px 0 0 0;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;    
+}
+
+button[type="submit"] {
+    background-color: #005CDE;
+    color:white;
+}
+
+button[type="button"] {
+    background-color: #c2c2c2;
+}
+
+}

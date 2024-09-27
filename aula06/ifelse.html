@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>// script.js
+document.getElementById('meuBotao').addEventListener('click', function() {
+    // Mostra um alerta simples
+    alert('Você clicou no botão!');
+
+    // Pede confirmação ao usuário
+    let continuar = confirm('Você deseja continuar?');
+
+    if (continuar) {
+        // Se o usuário clicar "OK", abre um prompt para inserir o nome
+        let nome = prompt('Por favor, insira seu nome:');
+        
+        if (nome) {
+            alert(`Olá, ${nome}! Bem-vindo à página simples.`);
+        } else {
+            alert('Você não inseriu um nome.');
+        }
+    } else {
+        alert('Você decidiu não continuar.');
+    }
+});</script>
+    
+    
+</body>
+</html>
