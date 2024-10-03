@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Iniciais</title>
+</head>
+<body>
+    <h1>Comandos prompt, confirm e alert</h1>
+
+    <p>Exercício para criar comandos simples, como:</p>
+
+    <ol>
+        <li>Pergunte o nome do usuário</li>
+        <li>Dê uma saudação utilizando o nome informado</li>
+        <li>Confirme se ele é maior de idade</li>
+        <li>Se sim, dê uma mensagem de boas vindas, se não dê uma mensagem de agradeciemento</li>
+    </ol>
+
+    <script>
+        let nome = prompt("Qual o seu nome?");
+        alert("Olá " + nome + ", tenho mais uma pergunta.");
+
+        let ok = confirm("Você tem mais de 18 anos?");
+
+        if (ok) 
+        {
+            alert("Seja bem vindo(a), aproveite o site");
+        }
+        else
+        {
+            alert("Você não tem idade para acessar este site")
+            window.location.href = "https://www.patatipatata.com.br/";
+        }
+
+    </script>
+    
+</body>
+</html>
