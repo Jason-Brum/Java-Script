@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aprovado ou reprovado com if e else</h1>
+   
+   <script>
+        let aluno = prompt("Qual o seu nome completo: ")
+        let matricula = prompt("Digite sua matrícula neste formato: aaaa.mmmm")
+
+        let avaliacao1 = prompt("Digite sua primeira nota: ")
+            avaliacao1 = parseFloat(avaliacao1 *2 / 10)
+      
+        let avaliacao2 = prompt("Digite sua segunda nota: ")
+            avaliacao2 = parseFloat(avaliacao2 *4 / 10)  
+
+        let avaliacao3 = prompt("Digite sua terceira nota: ")
+            avaliacao3 = parseFloat(avaliacao3 *4 / 10)
+
+        soma = (avaliacao1 + avaliacao2 + avaliacao3)
+
+        if(soma >= 6.8)
+        {
+           alert ("O aluno " + aluno + ", inscrito na matrícula " + matricula + ", teve a média de " + soma + ". Parabéns, você foi APROVADO") 
+        }
+
+        else
+        {
+            alert ("O aluno " + aluno + ", inscrito na matrícula " + matricula + ", teve a média de " + soma + ". Você não alcançou a pontuação, você precisará fazer dependência desta disciplina")
+        }
+
+    </script>
+    
+</body>
+</html>

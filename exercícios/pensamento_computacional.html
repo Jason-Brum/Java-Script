@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Pensamento computacional</title>
+</head>
+<body>
+    <h1>Valor total das compras e com desconto</h1>
+    
+    <script>
+        let produto = prompt("Digite o valor do produto desejado:");
+        produto = parseFloat(produto);  
+
+        let quant = prompt("Digite a quantidade desejada: ");
+        quant = parseInt(quant)
+
+        let resultado = produto * quant
+        let desconto = (produto*quant) / 100 * 85
+
+        alert("O total das suas compras é: " + resultado)
+        alert("Já o valor com desconto é: " + desconto)
+
+    </script>
+</body>
+</html>
