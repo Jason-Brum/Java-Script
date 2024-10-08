@@ -8,6 +8,7 @@
         body {
             background: rgb(137, 137, 241) ;
             color: white;
+            font: normal 18pt Arial;
         }
     </style>
 </head>
@@ -15,11 +16,23 @@
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em Java Script</p>
-    <div>Clique em mim</div>
+    <div id="teste">
+        <p>Este é o terceiro parágrafo.</p>
+    </div>
+    <div id="msg">Clique em mim</div>
 
     <script>
-        var p1 = window.document.getElementsByTagName('p')[0]
-        window.document.write('Está escrito: ' + p1.innerText)
+        var p1 = window.document.getElementsByTagName('p')[0] //Este zero(0) refere-se ao primeiro parágrafo. Usar os colchetes sempre que tiver mais de um elemento(marca, nome...)
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'red'
+        var d2 = window.document.querySelector('div#teste')
+
+        d2.style.background = 'lime'; 
+        d2.style.color = 'black';
+
+
+
     </script>
 
 

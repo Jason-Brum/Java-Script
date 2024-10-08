@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background: rgb(140, 177, 212);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com D.O.M</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="mudacorfundo">Clique em mim </div> <!--div é uma divisória, um conteiner, uma área qualquer delimitada por essa tag, mas que não tem nenhuma função específica, é somente uma delimitação-->
+    <div>
+        <h2>Exercícios com DOM</h2>
+        <p id="ze">Este parágrafo será colocado dentro de um ID e terá uma configuração diferente</p>
+    </div>
+
+        <p>Aque neste parágrafo eu vou usar uma <strong> By Tag Name</strong> no strong</p>
+
+    <script>
+        let p1 = window.document.querySelector('p#ze')
+        window.document.write('Bla bla bla ' + p1.innerText)
+
+        p1.style.color='red'
+
+        let d1 = window.document.getElementById('mudacorfundo')
+        d1.style.background = 'lime'
+
+        let s1 = window.document.getElementsByTagName('strong') [0]
+        s1.style.color = 'black'
+
+    </script>
+    
+</body>
+</html>
