@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div#area { /*tralha, hashtag ou jogo da velha é usada para chamar uma id, nesse caso ao lado é a area */
+        div#area { /*tralha, hashtag ou jogo da velha é usada para chamar uma id, nesse caso ao lado é a area. Se fosse class, seria um ponto (.)*/
             font: normal 22pt arial;
             background-color: green;
             color: white;
@@ -24,7 +24,7 @@
 
     <script>
         var a = window.document.getElementById('area')
-        a.addEventListener('click', clicar)
+        a.addEventListener('click', clicar) //addEventListener é como programar que ele "ouça" e execute determinada ação
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
 
