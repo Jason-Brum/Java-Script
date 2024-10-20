@@ -8,7 +8,6 @@ let qtdImpares = 0;
 for (let e = 0; e < 5; e++) {
     let numero = parseInt(prompt('Digite 5 números de 0 a 100: '));
     numeros.push(numero);
-    
 }
 
 soma = soma + numero;
