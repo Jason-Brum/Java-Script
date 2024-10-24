@@ -46,3 +46,6 @@ console.log("Quantidade de números pares: " + qdtPares);
 console.log("Quantidade de números ímpares: " + qtdImpares);
 console.log("Maior número " + maiorNumero);
 console.log("Menor número " + menorNumero);
+
+
+// soma fora do laço (erro) e ficou confuso com dois laços for

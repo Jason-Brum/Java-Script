@@ -52,3 +52,5 @@ if (soma % 2 == 0) {
 if (soma % 2 == 1) {
     console.log("A soma é um número ímpar");
 }
+
+//função obterNumero, código mais organizado

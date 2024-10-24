@@ -52,3 +52,4 @@ if (soma % 2 == 0) {
 if (soma % 2 == 1) {
     console.log("A soma é um número ímpar");
 }
+// utlização de isNaN para só aceitar números, tem um problema no while e o min e max não estão sendo usadas

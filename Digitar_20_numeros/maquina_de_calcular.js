@@ -46,3 +46,6 @@ console.log("Quantidade de números pares: " + qdtPares);
 console.log("Quantidade de números ímpares: " + qtdImpares);
 console.log("Maior número " + maiorNumero);
 console.log("Menor número " + menorNumero);
+
+
+//não tem controle se os números digitados estarão entre 0 e 100

@@ -47,3 +47,5 @@ if (soma % 2 == 0) {
 if (soma % 2 == 1) {
     console.log("A soma é um número ímpar");
 }
+
+// validação para que os números fiquem dentro do intervalo e a soma foi colocada dentro do laço de novo
