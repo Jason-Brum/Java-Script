@@ -1,43 +1,58 @@
 @charset "utf-8";
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
 }
 
+.container {
+    width: 300px; 
+    display: flex;
+    flex-direction: column; /* Empilha cabeçalho e formulário verticalmente */
+    align-items: center; 
+
+.cabecalho {
+    background-color: #005CDE;
+    padding: 5px 10px 0px 10px;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: 1px 1px 1px 0px #6b6b6b8f;
+    font-size: 18px;
+    margin: 0px;
+    width: 400px;
+    color: white;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2 img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 0px;
+}
 
 .caixaDeLogin{
     background-color: white;
-    padding: 0px 30px 30px 30px;
-    border-radius: 6px;
+    padding: 10px 30px 30px 30px;
+    border-radius: 0px 0px 6px 6px;
     box-shadow: 1px 1px 1px #6b6b6b8f;
-    width: 300px;
+    width: 400px;
     text-align: center;
+   
 }
 
-h2 {
-    background-color: #005CDE;
-    font-size: 20px;
-    margin: 0px;
-    width: 100%;
-    color: white;
-    padding: 9px 0px;
-    text-align: center;
-    vertical-align: middle;
-    
-}
 
-.logoModificar {
-    width: 38px;
-    height: auto;
-    vertical-align: middle;
-    margin: 0 2px;
-}
 
 .inserirDados{
     margin-bottom: 15px;
@@ -89,4 +104,5 @@ button[type= "button"] {
     color: black;
     width: 100px;
     margin-left: 20px;
+}
 }
